@@ -1,0 +1,58 @@
+site_name: SRZ Jahresarbeit
+site_url: https://srz-jahresarbeit.github.io/docs/
+repo_name: SRZ-Jahresarbeit/docs
+repo_url: https://github.com/SRZ-Jahresarbeit/docs
+site_description: "todo"
+site_author: https://github.com/SRZ-Jahresarbeit
+remote_branch: gh-pages
+edit_uri: edit/master/docs
+
+theme:
+  name: 'material'
+  palette:
+    scheme: preference
+    primary: 'green'
+    accent: 'lime'
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  language: en
+  direction: ltr
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.expand
+    - navigation.instant
+    - navigation.sections
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.tabbed
+  - attr_list
+
+plugins:
+  - git-revision-date
+  - git-revision-date-localized
+  - search:
+      lang: de
+
+nav:
+  - 'Allgemein': index.md
+
+#  - 'Installation':
+#    - 'Base': 'installation/index.md'
+#    - 'Configure DNS': 'installation/dns.md'
+#    - 'Docker': 'installation/docker.md'
+#    - 'Stack Logic': 'installation/stack-logic.md'
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
