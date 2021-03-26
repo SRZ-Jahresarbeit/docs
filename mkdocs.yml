@@ -43,7 +43,7 @@ plugins:
   - git-revision-date
   - git-revision-date-localized
   - search:
-      lang: de
+      lang: en
 
 nav:
   - "Overview": index.md
