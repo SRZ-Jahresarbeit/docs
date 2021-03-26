@@ -46,8 +46,9 @@ plugins:
       lang: de
 
 nav:
-  - "Allgemein": index.md
+  - "Overview": index.md
   - "Backlog": backlog.md
+  - "Api": api.md
 
 #  - 'Installation':
 #    - 'Base': 'installation/index.md'
