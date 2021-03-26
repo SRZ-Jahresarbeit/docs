@@ -47,8 +47,7 @@ plugins:
 
 nav:
   - "Allgemein": index.md
-  - "Api":
-      - "Sensor": api/sensor.md
+  - "Backlog": backlog.md
 
 #  - 'Installation':
 #    - 'Base': 'installation/index.md'

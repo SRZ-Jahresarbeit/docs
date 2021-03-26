@@ -1,0 +1,1 @@
+- min/max/avg data
