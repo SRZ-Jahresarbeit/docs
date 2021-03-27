@@ -49,6 +49,7 @@ nav:
   - "Overview": index.md
   - "Backlog": backlog.md
   - "Api": api.md
+  - "Frontend": Frontend.md 
 
 #  - 'Installation':
 #    - 'Base': 'installation/index.md'
