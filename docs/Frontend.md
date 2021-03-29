@@ -1,4 +1,4 @@
-### Tailwind CSS
+## Tailwind CSS
 Tailwind CSS is a CSS framework.
 <br>
 It requires **Node.js 12.13.0 or higher.**
