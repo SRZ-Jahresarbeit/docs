@@ -1,6 +1,5 @@
 ## Tailwind CSS
 Tailwind CSS is a CSS framework.
-<br>
 It requires **Node.js 12.13.0 or higher.**
 <br>
 The documentation can be found here:
@@ -9,7 +8,7 @@ https://tailwindcss.com/docs
 ```
 We are using Tailwind without PostCSS.
 <br>
-With this command you can install the **tailwind.css* file:
+With this command you can install the **tailwind.css** file:
 ```
 npx tailwindcss-cli@latest build -o src/tailwind.css
 ```
