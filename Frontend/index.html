@@ -340,23 +340,30 @@
                   <h1>Frontend</h1>
                 
                 <h2 id="tailwind-css">Tailwind CSS<a class="headerlink" href="#tailwind-css" title="Permanent link">&para;</a></h2>
-<p>Tailwind CSS is a CSS framework.
+<p>Tailwind CSS is a utility-first CSS framework.
 It requires <strong>Node.js 12.13.0 or higher.</strong>
 <br>
 The documentation can be found here:
 <div class="highlight"><pre><span></span><code>https://tailwindcss.com/docs
 </code></pre></div>
-We are using Tailwind without PostCSS.
+We are using Tailwind as a PostCSS Plugin.
 <br>
-With this command you can install the <strong>tailwind.css</strong> file:
+We install Tailwindcss, PostCSS and autoprefixer with this command:
+<div class="highlight"><pre><span></span><code>npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+</code></pre></div></p>
+<p>With this command we installed and built the <strong>tailwind.css</strong> file:
 <div class="highlight"><pre><span></span><code>npx tailwindcss-cli@latest build -o src/tailwind.css
-</code></pre></div>
-With the command 
+</code></pre></div></p>
+<p>With the command 
 <div class="highlight"><pre><span></span><code>npx tailwindcss-cli@latest build src/styles.css -o src/tailwind.css
 </code></pre></div>
 the changes are automatically transferred from the styles.css file to the tailwind.css file.
 <br>
-This is useful if you want to have another stylesheet in addition to the Tailwind CSS file</p>
+This is useful if you want to have another stylesheet in addition to the Tailwind CSS file.
+<br>
+The changes in the files <strong>postcss.config.js</strong> and <strong>tailwind.config.js</strong> are also adopted in Tailwind when this command is executed
+<br>
+This is not done before!</p>
                 
                   
                     
@@ -365,7 +372,7 @@ This is useful if you want to have another stylesheet in addition to the Tailwin
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 30, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2021</span>
     
   </small>
 </div>
