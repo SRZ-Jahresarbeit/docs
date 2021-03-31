@@ -6,7 +6,7 @@ The documentation can be found here:
 ```
 https://tailwindcss.com/docs
 ```
-We are using Tailwind as a PostCSS Plugin.
+We are using Tailwind 2.0.4 as a PostCSS Plugin.
 <br>
 We install Tailwindcss, PostCSS and autoprefixer with this command:
 ```
