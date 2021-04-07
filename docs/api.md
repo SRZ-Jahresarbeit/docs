@@ -20,7 +20,7 @@ Use the topic `sensor/<id>` and the **payload** with your **measurement value**.
 
 The payload can be any decimal value between 2<sup>-1022</sup> and (2-2<sup>-52</sup>)&middot;2<sup>1023</sup>.
 <br>
-Keep in mind that the value is transmitted **without** any unit as a plain number!
+Keep in mind that the value is transmitted **without** any unit as a plain number and encoded as a string with `utf-8`!
 
 #### Example
 
