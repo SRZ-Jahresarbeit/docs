@@ -394,7 +394,7 @@ Use the topic <code>sensor/&lt;id&gt;</code> and the <strong>payload</strong> wi
 </blockquote>
 <p>The payload can be any decimal value between 2<sup>-1022</sup> and (2-2<sup>-52</sup>)&middot;2<sup>1023</sup>.
 <br>
-Keep in mind that the value is transmitted <strong>without</strong> any unit as a plain number!</p>
+Keep in mind that the value is transmitted <strong>without</strong> any unit as a plain number and encoded as a string with <code>utf-8</code>!</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>topic:
 sensor/f658a3c1-d1cc-49d3-9976-ff2500b4187b
@@ -410,7 +410,7 @@ payload:
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 26, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2021</span>
     
   </small>
 </div>
