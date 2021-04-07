@@ -16,7 +16,7 @@ New data gets published via mqtt.
 <br>
 Use the topic `sensor/<id>` and the **payload** with your **measurement value**.
 
-The payload can be any decimal value between <code>-2<sup>31</sup></code> and <code>2<sup>31</sup>-1</code>.
+The payload can be any decimal value between <code>2<sup>-1022</sup></code> and <code>(2-2<sup>-52</sup>)&middot;2<sup>1023</sup></code>.
 <br>
 Keep in mind that the value is transmitted **without** any unit as a plain number and encoded as a string with `utf-8`!
 
