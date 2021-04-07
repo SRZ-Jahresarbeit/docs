@@ -389,10 +389,7 @@
 <p>New data gets published via mqtt.
 <br>
 Use the topic <code>sensor/&lt;id&gt;</code> and the <strong>payload</strong> with your <strong>measurement value</strong>.</p>
-<blockquote>
-<p>TODO: check influx max value</p>
-</blockquote>
-<p>The payload can be any decimal value between 2<sup>-1022</sup> and (2-2<sup>-52</sup>)&middot;2<sup>1023</sup>.
+<p>The payload can be any decimal value between <code>-2<sup>31</sup></code> and <code>2<sup>31</sup>-1</code>.
 <br>
 Keep in mind that the value is transmitted <strong>without</strong> any unit as a plain number and encoded as a string with <code>utf-8</code>!</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
