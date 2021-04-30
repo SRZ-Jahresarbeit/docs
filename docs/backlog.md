@@ -1,2 +1,3 @@
 - min/max/avg data
 - sensor data response, paging to prevent to big data
+- authentication
