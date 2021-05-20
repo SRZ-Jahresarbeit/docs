@@ -22,7 +22,7 @@ With the command
 ```
 npx tailwindcss-cli@latest build src/styles.css -o src/tailwind.css
 ```
-the changes are automatically transferred from the styles.css file to the tailwind.css file.
+the changes are automatically transferred from the **styles.css** file to the tailwind.css file.
 <br>
 This is useful if you want to have another stylesheet in addition to the Tailwind CSS file.
 <br>
