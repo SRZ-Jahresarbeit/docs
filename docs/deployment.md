@@ -1,3 +1,9 @@
+To run this application you need docker and docker compose.
+<br>
+https://docs.docker.com/get-docker/
+
+<br>
+
 ```
 git clone https://github.com/SRZ-Jahresarbeit/docker.git
 docker-compose up -d
