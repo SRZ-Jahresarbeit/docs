@@ -11,6 +11,13 @@ to shutdown run:
 docker-compose down
 ```
 
+## Updating
+
+1) Take a backup of the `data` directory.
+2) run `docker-compose pull` - pulls new docker images form docker hub
+3) run `docker-compose down` - shutting down current instance
+4) run `docker-compose up -d` - booting up new instance with newly pulled docker images
+
 ## Persistance
 
 All relevent data is stored in the `data` directory.
