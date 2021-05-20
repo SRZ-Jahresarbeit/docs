@@ -13,14 +13,14 @@
         <meta name="author" content="https://github.com/SRZ-Jahresarbeit">
       
       
-        <link rel="canonical" href="https://srz-jahresarbeit.github.io/docs/api/">
+        <link rel="canonical" href="https://srz-jahresarbeit.github.io/docs/deployment/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
     
     
       
-        <title>Api - SRZ Jahresarbeit</title>
+        <title>Deployment - SRZ Jahresarbeit</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-consuming" class="md-skip">
+        <a href="#persistance" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Api
+              Deployment
             
           </span>
         </div>
@@ -233,67 +233,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Api
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
         Api
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#data-consuming" class="md-nav__link">
-    Data Consuming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-publishing" class="md-nav__link">
-    Data Publishing
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Publishing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -337,23 +281,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-consuming" class="md-nav__link">
-    Data Consuming
+  <a href="#persistance" class="md-nav__link">
+    Persistance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-publishing" class="md-nav__link">
-    Data Publishing
+  <a href="#testing" class="md-nav__link">
+    Testing
   </a>
   
-    <nav class="md-nav" aria-label="Data Publishing">
+    <nav class="md-nav" aria-label="Testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#mqtt" class="md-nav__link">
+    Mqtt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    Swagger
   </a>
   
 </li>
@@ -375,33 +326,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/SRZ-Jahresarbeit/docs/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/SRZ-Jahresarbeit/docs/edit/master/docs/deployment.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Api</h1>
+                  <h1>Deployment</h1>
                 
-                <h2 id="data-consuming">Data Consuming<a class="headerlink" href="#data-consuming" title="Permanent link">&para;</a></h2>
-<p>Data is consumed via a rest api. The documentation can be found here:</p>
-<div class="highlight"><pre><span></span><code>https://raw.githubusercontent.com/SRZ-Jahresarbeit/docs/master/api-docs.json
+                <div class="highlight"><pre><span></span><code>git clone https://github.com/SRZ-Jahresarbeit/docker.git
+docker-compose up -d
 </code></pre></div>
-<p>To visualize the documentation, you can use <a href="https://petstore.swagger.io/">petstore.swagger.io</a> and paste the above URL.</p>
-<hr />
-<h2 id="data-publishing">Data Publishing<a class="headerlink" href="#data-publishing" title="Permanent link">&para;</a></h2>
-<p>New data gets published via mqtt.
-<br>
-Use the topic <code>sensor/&lt;id&gt;</code> and the <strong>payload</strong> with your <strong>measurement value</strong>.</p>
-<p>The payload can be any decimal value between <code>2<sup>-1022</sup></code> and <code>(2-2<sup>-52</sup>)&middot;2<sup>1023</sup></code>.
-<br>
-Keep in mind that the value is transmitted <strong>without</strong> any unit as a plain number and encoded as a string with <code>utf-8</code>!</p>
-<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>topic:
-sensor/f658a3c1-d1cc-49d3-9976-ff2500b4187b
-
-payload:
-10.6
-</code></pre></div>
+<p>Now the backend is listening on port <code>8080</code> and the mqtt broker is
+listening in port <code>1883</code>.</p>
+<p>to shutdown run:
+<div class="highlight"><pre><span></span><code>docker-compose down
+</code></pre></div></p>
+<h2 id="persistance">Persistance<a class="headerlink" href="#persistance" title="Permanent link">&para;</a></h2>
+<p>All relevent data is stored in the <code>data</code> directory.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<h3 id="mqtt">Mqtt<a class="headerlink" href="#mqtt" title="Permanent link">&para;</a></h3>
+<p>To publish test data to the mqtt broker, you can use:
+<div class="highlight"><pre><span></span><code>mosquitto_pub -h localhost -p 1883 -t sensor/&lt;sensorId&gt; -m &lt;value&gt;
+</code></pre></div></p>
+<h3 id="swagger">Swagger<a class="headerlink" href="#swagger" title="Permanent link">&para;</a></h3>
+<p>The SwaggerUI is available at <a href="http://localhost:8080/swagger-ui.html">localhost:8080/swagger-ui.html</a></p>
                 
                   
                     
@@ -410,7 +358,7 @@ payload:
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 20, 2021</span>
       
     
   </small>
@@ -431,39 +379,6 @@ payload:
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../backlog/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Backlog
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../Frontend/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Frontend
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
