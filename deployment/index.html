@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#persistance" class="md-skip">
+        <a href="#updating" class="md-skip">
           Skip to content
         </a>
       
@@ -281,6 +281,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#persistance" class="md-nav__link">
     Persistance
   </a>
@@ -341,6 +348,11 @@ listening in port <code>1883</code>.</p>
 <p>to shutdown run:
 <div class="highlight"><pre><span></span><code>docker-compose down
 </code></pre></div></p>
+<h2 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">&para;</a></h2>
+<p>1) Take a backup of the <code>data</code> directory.
+2) run <code>docker-compose pull</code> - pulls new docker images form docker hub
+3) run <code>docker-compose down</code> - shutting down current instance
+4) run <code>docker-compose up -d</code> - booting up new instance with newly pulled docker images</p>
 <h2 id="persistance">Persistance<a class="headerlink" href="#persistance" title="Permanent link">&para;</a></h2>
 <p>All relevent data is stored in the <code>data</code> directory.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
