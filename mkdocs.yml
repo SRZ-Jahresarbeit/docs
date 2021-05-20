@@ -47,9 +47,10 @@ plugins:
 
 nav:
   - "Overview": index.md
-  - "Backlog": backlog.md
-  - "Api": api.md
+  - "Deployment": deployment.md
   - "Frontend": Frontend.md 
+  - "Api": api.md
+  - "Backlog": backlog.md
 
 #  - 'Installation':
 #    - 'Base': 'installation/index.md'
