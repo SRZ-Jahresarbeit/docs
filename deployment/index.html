@@ -434,10 +434,12 @@ listening in port <code>1883</code>.</p>
 <div class="highlight"><pre><span></span><code>docker-compose down
 </code></pre></div></p>
 <h2 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">&para;</a></h2>
-<p>1) Take a backup of the <code>data</code> directory.
-2) run <code>docker-compose pull</code> - pulls new docker images form docker hub
-3) run <code>docker-compose down</code> - shutting down current instance
-4) run <code>docker-compose up -d</code> - booting up new instance with newly pulled docker images</p>
+<ol>
+<li>Take a backup of the <code>data</code> directory.</li>
+<li>run <code>docker-compose pull</code> - pulls new docker images form docker hub</li>
+<li>run <code>docker-compose down</code> - shutting down current instance</li>
+<li>run <code>docker-compose up -d</code> - booting up new instance with newly pulled docker images</li>
+</ol>
 <h2 id="persistance">Persistance<a class="headerlink" href="#persistance" title="Permanent link">&para;</a></h2>
 <p>All relevent data is stored in the <code>data</code> directory.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
