@@ -406,13 +406,13 @@
 <h2 id="data-publishing">Data Publishing<a class="headerlink" href="#data-publishing" title="Permanent link">&para;</a></h2>
 <p>New data gets published via mqtt.
 <br>
-Use the topic <code>sensor/&lt;id&gt;</code> and the <strong>payload</strong> with your <strong>measurement value</strong>.</p>
+Use the topic <code>sensor_id/&lt;id&gt;</code> and the <strong>payload</strong> with your <strong>measurement value</strong>.</p>
 <p>The payload can be any decimal value between <code>2<sup>-1022</sup></code> and <code>(2-2<sup>-52</sup>)&middot;2<sup>1023</sup></code>.
 <br>
 Keep in mind that the value is transmitted <strong>without</strong> any unit as a plain number and encoded as a string with <code>utf-8</code>!</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>topic:
-sensor/f658a3c1-d1cc-49d3-9976-ff2500b4187b
+sensor_id/f658a3c1-d1cc-49d3-9976-ff2500b4187b
 
 payload:
 10.6
@@ -425,7 +425,7 @@ payload:
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 21, 2021</span>
       
     
   </small>
