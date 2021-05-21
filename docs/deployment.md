@@ -6,6 +6,7 @@ https://docs.docker.com/get-docker/
 
 ```
 git clone https://github.com/SRZ-Jahresarbeit/docker.git
+cd docker
 docker-compose up -d
 ```
 
